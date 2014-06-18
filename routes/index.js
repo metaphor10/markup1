@@ -37,17 +37,8 @@ sendgrid.send(payload, function(err, json) {
 
   
 });
-router.get('/digskills-603/jq-mediaelement', function(req, res) {
-  res.render('jq-mediaelement/index', { title: 'media element' });
-});
-router.get('/digskills-603/jq-mediaelement/media', function(req, res) {
-  res.render('jq-mediaelement/index', { title: 'media element upload' });
 
-});
 
-router.post('/fileupload', function(req, res) {
-
-});
 
 
 module.exports = router;
