@@ -1,0 +1,55 @@
+    /* ========= Set base 10 font size ========= */
+    html {
+    font-size: 62.5%;
+    }
+     
+    body {
+    color: #fff;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    }
+     
+    /* ========== General Styles ========== */
+     
+    /* Background */
+    body {
+    background: #2d2d2d url(/images/bg/low_contrast_linen.png) repeat 0 0;
+    }
+     
+    /* Links */
+    a,
+    a:link,
+    a:visited {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    }
+     
+    a:hover,
+    a:active,
+    a:focus {
+    border-color: #d4d4d4;
+    color: #d4d4d4;
+    }
+     
+    /* ========== Layout ========== */
+     
+    .container {
+    margin: 20px auto;
+    max-width: 60em;
+    }
+     
+    /* ========== Modules ========== */
+     
+    /* Header */
+    .page-header {
+    border-bottom: 1px solid #fff;
+    }
+     
+    /* Footer */
+    .page-footer {
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+    margin-top: 2rem;
+    }
