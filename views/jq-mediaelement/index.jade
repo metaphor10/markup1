@@ -5,7 +5,7 @@ html
 		//<meta name="viewport" content="width=device-width, initial-scale=1">
 		meta(name="description", content="Enter a short description of this webpage")
 		link(rel='stylesheet', href='/stylesheets/normalize.css')
-		link(herf="http://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.13.1/css/mediaelementplayer.min.css", rel="stylesheet")
+		link(href="http://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.13.1/css/mediaelementplayer.min.css", rel="stylesheet")
 		link(rel='stylesheet', href='/stylesheets/jq-mediaelement/style.css')
 
 	body
@@ -17,7 +17,7 @@ html
 			#content(role="main")
 				section.video
 					h2 senna goes for a walk
-					video(width="640", height="480", poster="media/video/senna/senna.jpg", controls-preload="none")
+					video(width="640", height="480", poster="media/video/senna/senna.jpg", controls preload="none")
 						source(type="video/mp4", src="media/video/senna/senna.mp4")
 						source(type="video/webm", src="media/video/senna/senna.webm")
 						source(type="video/ogg", src="media/video/senna/senna.ogv")
@@ -29,7 +29,7 @@ html
 				section.audio
 					h2 This Land Is Your Land
 					p.byline by woodi Guthrie, performed by Anthony Bowman
-					audio(controls-preload="none")
+					audio(controls preload="none")
 						source(type="audio/mp3", src="media/audio/this-land-is-your-land.mp3")
 						source(type="audio/ogg", src="media/audio/this-land-is-your-land.ogg")
 						p This browser does not support our audio format. Download the audio file from
