@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var sendgrid  = require('sendgrid')('metaphor', 'a1492sus');
+var sendgrid  = require('sendgrid')('', '');
 
 /* GET home page. */
 router.get('/', function(req, res) {
