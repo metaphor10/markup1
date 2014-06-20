@@ -5,5 +5,8 @@ var router = express.Router();
 router.get('/', function(req, res) {
   res.render('jq-mediaelement/index', { title: 'media element' });
 });
+router.get('/video', function(req, res) {
+  res.render('jq-mediaelement/video2', { title: 'media element' });
+});
 
 module.exports = router;

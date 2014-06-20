@@ -53,3 +53,8 @@
     margin-top: 20px;
     margin-top: 2rem;
     }
+
+        /* MediaElement rule to set color of progress bar */
+    .mejs-controls .mejs-time-rail .mejs-time-loaded {
+    background: #b6bec5;
+    }

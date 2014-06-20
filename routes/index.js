@@ -5,22 +5,19 @@ var sendgrid  = require('sendgrid')('metaphor', 'a1492sus');
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Home | Ariel Borochov' });
+  res.render('digskills-603/rwd-01/index', { title: 'Home | Ariel Borochov' });
   console.log(req);
 });
 
-router.get('/digskills-603/rwd-01/', function(req, res) {
-  res.render('index', { title: 'Home | Ariel Borochov' });
+router.get('/about', function(req, res) {
+  res.render('digskills-603/rwd-01/about', { title: 'about | Ariel Borochov' });
 });
-router.get('/digskills-603/rwd-01/about', function(req, res) {
-  res.render('about', { title: 'about | Ariel Borochov' });
-});
-router.get('/digskills-603/rwd-01/contact', function(req, res) {
-  res.render('contact', { title: 'contact | Ariel Borochov', myEmail: 'ariel.borochov@gmail.com' });
+router.get('/contact', function(req, res) {
+  res.render('digskills-603/rwd-01/contact', { title: 'contact | Ariel Borochov', myEmail: 'ariel.borochov@gmail.com' });
 
 });
-router.get('/digskills-603/rwd-01/portfolio', function(req, res) {
-  res.render('portfolio', { title: 'portfolio | Ariel Borochov' });
+router.get('/portfolio', function(req, res) {
+  res.render('digskills-603/rwd-01/portfolio', { title: 'portfolio | Ariel Borochov' });
 });
 router.post('/contactsubmit', function(req, res) {
 		var payload   = {
@@ -33,6 +30,7 @@ router.post('/contactsubmit', function(req, res) {
 sendgrid.send(payload, function(err, json) {
   if (err) { console.error(err); }
   console.log(json);
+  res.render('digskills-603/rwd-01/index', { title: 'Home | Ariel Borochov' });
 });
 
   
