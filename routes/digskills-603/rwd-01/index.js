@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
   res.render('digskills-603/rwd-01/index', { title: 'Home | Ariel Borochov' });
   
 });
-/*
+
 router.get('/about', function(req, res) {
   res.render('digskills-603/rwd-01/about', { title: 'about | Ariel Borochov' });
 });
@@ -35,7 +35,7 @@ sendgrid.send(payload, function(err, json) {
 
   
 });
-*/
+
 
 
 
