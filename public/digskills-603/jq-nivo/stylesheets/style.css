@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ========= Set base 10 font size ========= */
+html {
+	font-size: 62.5%;
+}
+ 
+body {
+	color: #474747;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+}
+ 
+
+/* ========== General Styles ========== */
+
+/* Background */
+body {
+	background: #f2f2f2 url(../images/bg/graphy.png) repeat 0 0;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+	border-bottom: 1px solid #39648e;
+	color: #39648e;
+	text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+	border-color: #1d325a;
+	color: #1d325a;
+}
+/* ========== Layout ========== */
+.container {
+	margin: 20px auto;
+	max-width: 60em;
+}
+
+
+/* ========== Modules ========== */
+
+/* Header */
+.page-header {
+	border-bottom: 1px solid #1d325a;
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
+}
+ 
+.tagline {
+	font: italic 14px Georgia, Times, "Times New Roman", serif;
+}
+
+/* Footer */
+
+.page-footer {
+	border-top: 1px solid #1d325a;
+}
+/* ==================================================
+Micro clearfix hack to address parent containers that collapse
+height with floated child elements. To use, simply add the
+class "cf" to any container with floated child elements.
+http://nicolasgallagher.com/micro-clearfix-hack/
+================================================== */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}

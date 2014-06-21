@@ -159,7 +159,7 @@ height: 150%;
 }
  
 .site-title a {
-background: url("/images/graphics/logo.png") no-repeat 0 0;
+background: url("../images/graphics/logo.png") no-repeat 0 0;
 display: block;
 height: 70px;
 }
@@ -326,12 +326,12 @@ http://nicolasgallagher.com/micro-clearfix-hack/
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url("images/graphics/sprites.svg");
+    background-image: url("../images/graphics/sprites.svg");
     background-repeat: no-repeat;
     }
      
     .no-svg [class*="icon-"] {
-    background-image: url("images/graphics/sprites.png");
+    background-image: url("../images/graphics/sprites.png");
     }
      
     .no-fontface .icon-google-plus,

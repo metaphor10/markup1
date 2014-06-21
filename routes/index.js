@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
-var sendgrid  = require('sendgrid')('', '');
+//var sendgrid  = require('sendgrid')('', '');
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('digskills-603/rwd-01/index', { title: 'Home | Ariel Borochov' });
+  res.render('digskills-603/jq-nivo/index', { title: 'Home | Ariel Borochov' });
   console.log(req);
 });
 
@@ -20,7 +20,7 @@ router.get('/portfolio', function(req, res) {
   res.render('digskills-603/rwd-01/portfolio', { title: 'portfolio | Ariel Borochov' });
 });
 router.post('/contactsubmit', function(req, res) {
-		var payload   = {
+/*		var payload   = {
   to      : 'ariel.borochov@gmail.com',
   from    : 'from@other.com',
   subject : 'Saying Hi',
@@ -31,7 +31,7 @@ sendgrid.send(payload, function(err, json) {
   if (err) { console.error(err); }
   console.log(json);
   res.render('digskills-603/rwd-01/index', { title: 'Home | Ariel Borochov' });
-});
+});*/
 
   
 });

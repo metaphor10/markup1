@@ -1,13 +1,13 @@
 html
 	head
 		title video.js
-		link(rel="stylesheet", href="/stylesheets/jq-mediaelement/video-js.min.css")
-		script(src="/javascripts/video.js")
+		link(rel="stylesheet", href="stylesheets/video-js.min.css")
+		script(src="javascripts/video.js")
 		script video.options.flash.swf="video-js.swf"
 	video#example_video_1.video-js.vjs-default-skin(controls preload="none", width="640", height="264", poster="http://video-js.zencoder.com/oceans-clip.png", data-setup="{}")
 		source(src="http://video-js.zencoder.com/oceans-clip.mp4", type="video/mp4")
 		source(src="http://video-js.zencoder.com/oceans-clip.webm", type="video/webm")
 		source(src="http://video-js.zencoder.com/oceans-clip.ogv", type="video/ogg")
-		track(kind="captions", src="demo.captions.vtt", srclang="en", label="English")
-		track(kind="subtitles", src="demo.captions.vtt", srclang="en", label="English")
+		track(kind="captions", src="stylesheets/demo.captions.vtt", srclang="en", label="English")
+		track(kind="subtitles", src="stylesheets/demo.captions.vtt", srclang="en", label="English")
 		p.vjs-no-js To view this video please enable javascript

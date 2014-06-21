@@ -1,14 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-var sendgrid  = require('sendgrid')('', '');
+//var sendgrid  = require('sendgrid')('', '');
 
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('digskills-603/rwd-01/index', { title: 'Home | Ariel Borochov' });
-  console.log(req);
+  
 });
-
+/*
 router.get('/about', function(req, res) {
   res.render('digskills-603/rwd-01/about', { title: 'about | Ariel Borochov' });
 });
@@ -35,7 +35,7 @@ sendgrid.send(payload, function(err, json) {
 
   
 });
-
+*/
 
 
 

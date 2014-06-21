@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title jQuery Assignment 01 &ndash; Nivo Slider
+		link(rel="stylesheet", href="stylesheets/normalize.css")
+		link(rel="stylesheet", href="http://cdn.jsdelivr.net/nivoslider/3.2/themes/default/default.css")
+		link(rel="stylesheet", href="http://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/nivo-slider.min.css")
+		link(rel="stylesheet", href="stylesheets/style.css")
+	body
+
+		#content
+			.slider-wrapper.theme-default
+				div#slider.nivoSlider
+					img(src="images/boy.jpg", alt="a boy in a straw hat", title="A boy in a straw hat stands against cloudy sky.")
+					img(src="images/carnival-ride.jpg", alt="People enjoying a carnival ride", title="#htmlcaption")
+					img(src="images/father-daughter.jpg", alt="A father holds his daughter.", title="A father holds his daughter in a tall, grassy field.")
+			#htmlcaption.nivo-html-caption.
+				<strong>People</strong> enjoying a <em>carnival</em> ride as it spins against <a href="#">the sky</a>.
+				
+
+
+		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+		| <script>window.jQuery || document.write('<script src="javascripts/jquery-1.11.0.min.js"><\/script>')</script>
+		//nivo slider
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/jquery.nivo.slider.pack.js")
+		script(src="javascripts/plugins.js")

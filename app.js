@@ -9,9 +9,12 @@ var bodyParser = require('body-parser');
 var home = require('./routes/index');
 var routes = require('./routes/digskills-603/rwd-01/index');
 var users = require('./routes/users');
-var media1 = require('./routes/jq-mediaelement/about');
+var media1 = require('./routes/digskills-603/jq-mediaelement/about');
+var jqNivo = require('./routes/digskills-603/jq-nivo/index');
+
 
 var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -25,11 +28,12 @@ app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+console.log('app use')
 app.use('/', home)
 app.use('/digskills-603/rwd-01', routes);
-app.use('/jq-mediaelement', media1);
+app.use('/digskills-603/jq-mediaelement', media1);
 app.use('/users', users);
+app.use('/digskills-603/jq-nivo', jqNivo)
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
