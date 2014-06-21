@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ========= Set base 10 font size ========= */
+
+
+/* ========== General Styles ========== */
+html {
+	font-size: 62.5%;
+}
+ 
+body {
+	color: #fff;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+}
+
+/* Background */
+body {
+	background-color: #2d2d2d;
+}
+ 
+
+/* Links */
+a,
+a:link,
+a:visited {
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+	border-color: #d4d4d4;
+	color: #d4d4d4;
+}
+
+/* ========== Layout ========== */
+
+.container {
+	margin: 20px auto;
+	max-width: 50em;
+}
+/* ========== Modules ========== */
+
+/* Gallery styles */
+ #gallery {
+	background-color: #3f3f3f;
+	padding: 20px 0;
+	padding: 2rem 0;
+}
+#gallery h2 {
+color: #e7ca3c;
+text-align: center;
+}
+ 
+#gallery ul {
+list-style: none;
+}
+ 
+#gallery li {
+display: inline-block;
+padding: 20px;
+padding: 2rem;
+}
+ 
+#gallery img {
+border: 5px solid #d4d4d4;
+height: 125px;
+width: 125px;
+}
+ 
+#gallery a,
+a.fancybox-close {
+border: none;
+}
+ 
+#gallery a:hover img,
+#gallery a:active img,
+#gallery a:focus img {
+border-color: #fff;
+}
+
+/* ==================================================
+Micro clearfix hack to address parent containers that collapse
+height with floated child elements. To use, simply add the
+class "cf" to any container with floated child elements.
+http://nicolasgallagher.com/micro-clearfix-hack/
+================================================== */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+.cf {
+  *zoom: 1;
+}

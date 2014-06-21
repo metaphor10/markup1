@@ -11,6 +11,8 @@ var routes = require('./routes/digskills-603/rwd-01/index');
 var users = require('./routes/users');
 var media1 = require('./routes/digskills-603/jq-mediaelement/about');
 var jqNivo = require('./routes/digskills-603/jq-nivo/index');
+var jqNivo = require('./routes/digskills-603/jq-fancybox/index');
+
 
 
 var app = express();
@@ -28,12 +30,13 @@ app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-console.log('app use')
+
 app.use('/', home)
 app.use('/digskills-603/rwd-01', routes);
 app.use('/digskills-603/jq-mediaelement', media1);
 app.use('/users', users);
-app.use('/digskills-603/jq-nivo', jqNivo)
+app.use('/digskills-603/jq-nivo', jqNivo);
+app.use('/digskills-603/jq-fancybox', jqNivo);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

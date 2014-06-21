@@ -1,0 +1,44 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title='jQuery Assignment 01 &ndash; MediaElement.js'
+		
+		meta(name="description", content="Enter a short description of this webpage")
+		link(rel='stylesheet', href='stylesheets/normalize.css')
+		link(href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css", rel="stylesheet")
+		link(rel='stylesheet', href='stylesheets/style.css')
+
+	body
+		#content(role="main")
+			#gallery
+				section.photos
+					h2 Photos
+					ul
+						each image in imagesToGo
+							li
+								a(href="images/"+image+".jpg", data-fancybox-group="gallery", class="fancybox")
+									img(src="images/thumbs/"+image+"-thumb.jpg")
+				section.videos
+					h2 Videos
+					ul
+						li
+							a(href="http://www.youtube.com/embed/YDBtCb61Sd4?rel=0;autoplay=1", title="Plastic Bag", class="fancybox fancybox.iframe")
+								img(src="images/thumbs/plastic-bag-thumb.jpg", alt="Plastic Bag")
+						li
+							a(href="http://player.vimeo.com/video/36730961?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1", title="Hearts (The Valentines Day Video)", class="fancybox fancybox.iframe")
+								img(src="images/thumbs/hearts-thumb.jpg", alt="Hearts")
+						li
+							a(href="http://www.youtube.com/embed/gR0UmMAhMCw?rel=0;autoplay=1", title="Jill Andrews - These Words", class="fancybox fancybox.iframe")
+								img(src="images/thumbs/jill-andrews-thumb.jpg", alt="Jill Andrews")
+						li
+							a(href="http://player.vimeo.com/video/19429666?title=0&amp;byline=0&amp;portrait=0&amp;color=29546e", title="Roger Federer at the 2011 Australian Open", class="fancybox fancybox.iframe")
+								img(src="images/thumbs/federer-thumb.jpg", alt="Roger Federer")
+		
+			
+
+		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+		script.
+			window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js")
+		script(src="javascripts/plugins.js")
