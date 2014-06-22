@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title JQuery Plugin Assigemnt &ndash; Backstretch
+		meta(name="description", content="Enter a description of this webpage")
+		link(rel="stylesheet", href="stylesheets/normalize.css")
+		link(rel="stylesheet", href="stylesheets/style.css")
+		//
+			[if lt IE 9]
+			script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+			[endif]
+	body
+		.container
+			header.page-header(role="banner")
+				h1.site-title
+					a(href="#")
+			#content(role="main")
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+	script.
+		window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+	script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js")
+	script(src="javascripts/plugins.js")
+		
+

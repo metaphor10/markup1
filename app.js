@@ -13,6 +13,7 @@ var media1 = require('./routes/digskills-603/jq-mediaelement/about');
 var jqNivo = require('./routes/digskills-603/jq-nivo/index');
 var jqNivo = require('./routes/digskills-603/jq-fancybox/index');
 var galleria = require('./routes/digskills-603/jq-galleria/index');
+var backstretch= require('./routes/digskills-603/jq-backstretch/index');
 
 
 
@@ -39,6 +40,7 @@ app.use('/users', users);
 app.use('/digskills-603/jq-nivo', jqNivo);
 app.use('/digskills-603/jq-fancybox', jqNivo);
 app.use('/digskills-603/jq-galleria', galleria);
+app.use('/digskills-603/jq-backstretch', backstretch);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
