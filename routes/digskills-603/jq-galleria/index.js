@@ -14,8 +14,9 @@ router.get('/', function(req, res) {
 						['notebook', 'notebook for a friend'],
 						['oranges','juciy oranges'],
 						['stir-fry','Great Stir Fry']
-		]
-  res.render('digskills-603/jq-fancybox/index', { title: 'fancy box', imagesToGo: imagesForShow });
+		];
+	var videosToPlay=[['http://www.youtube.com/watch?v=gR0UmMAhMCw','jill-andrews-thumb.jpg','Jill Andrews', 'Jill Andrews - Worth Keeping video'],['http://vimeo.com/19429666','federer-thumb.jpg','Roger Federer', 'Roger Federer at the 2011 Australian Open']];
+  res.render('digskills-603/jq-galleria/index', { title: 'galleria', imagesToGo: imagesForShow, videos1: videosToPlay });
 });
 
 
