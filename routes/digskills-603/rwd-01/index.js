@@ -1,6 +1,8 @@
-var express = require('express');
-var router = express.Router();
+module.exports = function(data){
 
+  var express = require('express');
+var router = express.Router();
+console.log(data);
 //var sendgrid  = require('sendgrid')('', '');
 
 /* GET home page. */
@@ -20,7 +22,7 @@ router.get('/portfolio', function(req, res) {
   res.render('digskills-603/rwd-01/portfolio', { title: 'portfolio | Ariel Borochov' });
 });
 router.post('/contactsubmit', function(req, res) {
-		var payload   = {
+    var payload   = {
   to      : 'ariel.borochov@gmail.com',
   from    : 'from@other.com',
   subject : 'Saying Hi',
@@ -36,7 +38,11 @@ sendgrid.send(payload, function(err, json) {
   
 });
 
+return router;
+}
 
 
 
-module.exports = router;
+
+
+

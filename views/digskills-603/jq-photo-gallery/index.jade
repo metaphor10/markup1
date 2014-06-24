@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title Jquery Photo Gallery
+		meta(name="decription", content="a simple jQuery photo gallery demo")
+
+		link(rel="stylesheet", href="stylesheets/normalize.css")
+		link(rel="stylesheet", href="stylesheets/style.css")
+	body
+		.container
+			header.page-header(role="banner")
+				h1.site-title JQuery Photo Gallery
+			#content(role="main")
+				#feature.cf
+					#photo-wraper
+						#photo
+							img(src="images/alpinist.jpg", alt="alpinist")
+
+					#caption-wraper
+						#caption
+							h2 Alpinist
+							p Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.
+
+				#thumbnails.cf
+					noscript
+						p please enable javascript in browser to view thumbnails
+							
+			footer.page-footer(role="contentinfo")
+				p &copy; Ariel Borochov
+		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+		script.
+			window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+		script(src="javascripts/plugins.js")
+			
+

@@ -1,3 +1,5 @@
+module.exports = function(data){
+
 var express = require('express');
 var path = require('path');
 var favicon = require('static-favicon');
@@ -14,6 +16,7 @@ var jqNivo = require('./routes/digskills-603/jq-nivo/index');
 var jqNivo = require('./routes/digskills-603/jq-fancybox/index');
 var galleria = require('./routes/digskills-603/jq-galleria/index');
 var backstretch= require('./routes/digskills-603/jq-backstretch/index');
+var photoGallery=require('./routes/digskills-603/jq-photo-gallery/index')(data);
 
 
 
@@ -33,6 +36,7 @@ app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+
 app.use('/', home)
 app.use('/digskills-603/rwd-01', routes);
 app.use('/digskills-603/jq-mediaelement', media1);
@@ -41,6 +45,7 @@ app.use('/digskills-603/jq-nivo', jqNivo);
 app.use('/digskills-603/jq-fancybox', jqNivo);
 app.use('/digskills-603/jq-galleria', galleria);
 app.use('/digskills-603/jq-backstretch', backstretch);
+app.use('/digskills-603/jq-photo-gallery', photoGallery);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -73,5 +78,9 @@ app.use(function(err, req, res, next) {
     });
 });
 
+return app;
+}
 
-module.exports = app;
+
+
+
