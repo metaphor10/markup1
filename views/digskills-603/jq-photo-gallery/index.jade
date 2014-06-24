@@ -8,6 +8,8 @@ html(lang="en")
 		link(rel="stylesheet", href="stylesheets/normalize.css")
 		link(rel="stylesheet", href="stylesheets/style.css")
 	body
+		script.
+
 		.container
 			header.page-header(role="banner")
 				h1.site-title JQuery Photo Gallery
@@ -23,8 +25,11 @@ html(lang="en")
 							p Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.
 
 				#thumbnails.cf
-					noscript
-						p please enable javascript in browser to view thumbnails
+					each image1 in appData
+						a(href="#", title=image1.title, onclick="switchPhoto('"+image1.image+"','"+image1.title+"','"+image1.caption+"')")
+							img(alt=image1.title, src="images/thumbs/"+image1.thumbnail)
+
+
 							
 			footer.page-footer(role="contentinfo")
 				p &copy; Ariel Borochov

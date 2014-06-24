@@ -69,6 +69,39 @@ img {
 
 /* Feature Gallery */
 
+    #feature {
+    margin-bottom: 30px;
+    margin-bottom: 3rem;
+    }
+
+        #photo-wrapper {
+    float: left;
+    width: 64.58333%; /* 620px/960px */
+    }
+
+        #photo {
+    position: relative;
+    padding-bottom: 66.6667%; /* 3:2 aspect ratio => 2/3 x 100 = 66.66667% */
+    padding-top: 0px;
+    height: 0;
+    }
+     
+    #photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+        .feature-title {
+    margin-top: 0;
+    }
+
+       #caption-wrapper {
+    float: right;
+    width: 31.25%; /* 300px/960px */
+    }
 
 /* ==================================================
 Micro clearfix hack to address parent containers that collapse
@@ -93,3 +126,23 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .cf {
     *zoom: 1;
 }
+
+    #thumbnails {
+    border-top: 1px solid #6d6d6d;
+    padding-top: 20px;
+    padding-top: 2rem;
+    }
+
+        #thumbnails img {
+    float: left;
+    margin: 1.25%;
+    width: 7.75%;
+    }
+
+        #thumbnails a:first-child img {
+    margin-left: 0;
+    }
+     
+    #thumbnails a:last-child img {
+    margin-right: 0;
+    }

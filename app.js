@@ -8,15 +8,15 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 
-var home = require('./routes/index');
+
 var routes = require('./routes/digskills-603/rwd-01/index');
 var users = require('./routes/users');
 var media1 = require('./routes/digskills-603/jq-mediaelement/about');
 var jqNivo = require('./routes/digskills-603/jq-nivo/index');
-var jqNivo = require('./routes/digskills-603/jq-fancybox/index');
+var jqFacybox = require('./routes/digskills-603/jq-fancybox/index');
 var galleria = require('./routes/digskills-603/jq-galleria/index');
 var backstretch= require('./routes/digskills-603/jq-backstretch/index');
-var photoGallery=require('./routes/digskills-603/jq-photo-gallery/index')(data);
+var photoGallery=require('./routes/digskills-603/jq-photo-gallery/index');
 
 
 
@@ -37,12 +37,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-app.use('/', home)
+console.log("inside app");
 app.use('/digskills-603/rwd-01', routes);
 app.use('/digskills-603/jq-mediaelement', media1);
 app.use('/users', users);
 app.use('/digskills-603/jq-nivo', jqNivo);
-app.use('/digskills-603/jq-fancybox', jqNivo);
+app.use('/digskills-603/jq-fancybox', jqFacybox);
 app.use('/digskills-603/jq-galleria', galleria);
 app.use('/digskills-603/jq-backstretch', backstretch);
 app.use('/digskills-603/jq-photo-gallery', photoGallery);

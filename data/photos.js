@@ -1,5 +1,4 @@
-    
-      [  {
+module.exports =  [  {
     "title": "Alpinist",
     "image": "alpinist.jpg",
     "thumbnail": "alpinist-thumb.jpg",
