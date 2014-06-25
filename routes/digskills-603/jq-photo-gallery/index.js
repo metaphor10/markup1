@@ -1,6 +1,6 @@
 
 var express = require('express');
-var data=require('../../../data/photos.js');
+
 var router = express.Router();
 
 
@@ -8,7 +8,8 @@ var router = express.Router();
 router.get('/', function(req, res) {
 	console.log(data.length);
 	 
-  res.render('digskills-603/jq-photo-gallery/index', { title: 'media element', appData: data });
+  res.render('digskills-603/jq-photo-gallery/index', { title: 'media element' });
+
 });
 
 	 module.exports =router;

@@ -17,6 +17,7 @@ var jqFacybox = require('./routes/digskills-603/jq-fancybox/index');
 var galleria = require('./routes/digskills-603/jq-galleria/index');
 var backstretch= require('./routes/digskills-603/jq-backstretch/index');
 var photoGallery=require('./routes/digskills-603/jq-photo-gallery/index');
+var routes2=require('./routes/digskills-603/rwd-02/index');
 
 
 
@@ -36,7 +37,7 @@ app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-
+app.locals.appData1= require('./data/photos.json');
 console.log("inside app");
 app.use('/digskills-603/rwd-01', routes);
 app.use('/digskills-603/jq-mediaelement', media1);
@@ -46,6 +47,7 @@ app.use('/digskills-603/jq-fancybox', jqFacybox);
 app.use('/digskills-603/jq-galleria', galleria);
 app.use('/digskills-603/jq-backstretch', backstretch);
 app.use('/digskills-603/jq-photo-gallery', photoGallery);
+app.use('/digskills-603/rwd-02', routes2);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

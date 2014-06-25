@@ -23,9 +23,10 @@ html(lang="en")
 						#caption
 							h2 Alpinist
 							p Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.
+				
 
 				#thumbnails.cf
-					each image1 in appData
+					each image1 in appData1
 						a(href="#", title=image1.title, onclick="switchPhoto('"+image1.image+"','"+image1.title+"','"+image1.caption+"')")
 							img(alt=image1.title, src="images/thumbs/"+image1.thumbnail)
 
